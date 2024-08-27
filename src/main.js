@@ -17,7 +17,7 @@ let highScore = 0;
 
 // Game scene
 scene("game", () => {
-    const PIPE_GAP = 110;
+    const PIPE_GAP = 170;
     let score = 0;
     setGravity(1600);
 
