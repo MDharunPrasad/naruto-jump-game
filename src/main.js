@@ -17,16 +17,16 @@ let highScore = 0;
 
 // Game scene
 scene("game", () => {
-    const PIPE_GAP = 140;
+    const PIPE_GAP = 170;
     let score = 0;
     setGravity(1600);
 
     // Add background image
     add([sprite("bg", { width: width(), height: height() })]);
 
-    const scoreText = add([text(score), pos(12, 12)]);
+    const scoreText = add([text(score), pos(15, 15)]);
 
-    const player = add([sprite("naruto"), scale(1.2), pos(100, 50), area(), body()]);
+    const player = add([sprite("naruto"), scale(1.2), pos(100,50), area(), body()]);
 
     function createPipes() {
         const offset = rand(-50, 50);
